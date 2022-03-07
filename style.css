@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+* {margin: 0;padding: 0;box-sizing: border-box;font-family:'Poppins',sans-serif; }
+:root {--clr: #222327}
+
+body {overflow: hidden;min-height: 100vh;width: 1200px;margin: 0 auto;background: var(--clr);}
+section {background: white;position: relative;width: 100%;height: calc(100vh - 70px);top: 0px;margin-bottom: 70px;}
+
+#who div div {float: left;display: block;width: 350px;padding-left:70px;margin-top: 50px;position: relative;position: relative;color: var(--clr);}
+#who div div span b {font-size: 1.5em;font-family: 'Poppins'}
+#who div div span p {font-size: 1.1em;font-family: 'Poppins'}
+#who div div ion-icon {font-size: 2.3rem;float: left;position: absolute;left: 15px;}
+
+.nav {position: fixed;width: 1200px;height: 70px;background: #fff;display: flex;justify-content: center;align-items: center;top: calc(100vh - 70px);border-top: 2px solid var(--clr);}
+.nav ul {display: flex;width: 350px;}
+.nav ul li {position: relative;list-style: none;width: 70px;height: 70px;z-index: 1;}
+.nav ul li a {position: relative;display: flex;justify-content: center;align-items: center;flex-direction: column;width: 100%;text-align: center;font-weight: 500;}
+.nav ul li a .icon {position: relative;display: block;line-height: 75px;font-size: 1.5em;text-align: center;transition: 0.5s;color: var(--clr);}
+.nav ul li.act a .icon {transform: translateY(-32px);}
+.nav ul li a .text {position: absolute;color: var(--clr);font-weight: 400;font-size: 1em;letter-spacing: 0.05em;transition: 0.5s;transform: translateY(20px);opacity: 0}
+.nav ul li.act a .text {opacity: 1;transform: translateY(10px);}
+
+.ind {position: absolute;top: -50%;width: 70px;height: 70px;background-color: #1080E8;border-radius: 50%;border: 2px solid var(--clr);transition: 0.5s;}
+.ind::before {content: '';position: absolute;top:50%;left: -22px;width: 20px;height: 20px;background: transparent;border-top-right-radius: 20px;}
+.ind::after {content: '';position: absolute;top:50%;right: -22px;width: 20px;height: 20px;background: transparent;border-top-left-radius: 20px;}
+
+.nav ul li:nth-child(1).act  ~ .ind {transform: translateX(0px);}
+.nav ul li:nth-child(2).act  ~ .ind {transform: translateX(70px);}
+.nav ul li:nth-child(3).act  ~ .ind {transform: translateX(140px);}
+.nav ul li:nth-child(4).act  ~ .ind {transform: translateX(210px);}
+.nav ul li:nth-child(5).act  ~ .ind {transform: translateX(280px);}

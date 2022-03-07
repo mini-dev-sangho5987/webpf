@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SH</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <section id="home">
+
+    </section>
+    <section id="who">
+      <h2 style="font-family: 'Fredoka', sans-serif;text-align:center;height:150px;line-height:220px;font-size:2.5rem;">ABOUT ME</h2>
+      <div style="height:350px;position:relative;width:1050px;margin:0 auto;">
+        <div>
+          <ion-icon name="person-sharp"></ion-icon>
+          <span>
+            <b>이름</b>
+            <p>황상호</p>
+          </span>
+        </div>
+        <div>
+          <ion-icon name="calendar-sharp"></ion-icon>
+          <span>
+            <b>생년월일</b>
+            <p>2008-01-07</p>
+          </span>
+        </div>
+        <div>
+          <ion-icon name="location-sharp"></ion-icon>
+          <span>
+            <b>주소지</b>
+            <p>인천광역시 서구</p>
+          </span>
+        </div>
+        <div>
+          <ion-icon name="call-sharp"></ion-icon>
+          <span>
+            <b>연락처</b>
+            <a href="tel:01034245987"><p>010-3424-5987</p></a>
+          </span>
+        </div>
+        <div>
+          <ion-icon name="mail-sharp"></ion-icon>
+          <span>
+            <b>메일</b>
+            <a href="mailto:sangho.hwang5987@gmail.com"><p>sangho.hwang5987@gmail.com</p></a>
+          </span>
+        </div>
+        <div>
+          <ion-icon name="ribbon-sharp"></ion-icon>
+          <span>
+            <b> 학력 및 수상 경력</b>
+            <p>인천 신현 초등학교 (졸업)</p>
+            <p>인천 가현 중학교 (재학)</p>
+            <p>과학기술정보통신부 장관상 수상</p>
+            <p>정보처리기능사 필기 합격 (실기 준비중)</p>
+          </span>
+        </div>
+      </div>
+    </section>
+    <section  id="what">
+      등등
+    </section>
+    <section id="how">
+      잘
+    </section>
+    <section id="why">
+      걍
+    </section>
+    <div class="nav">
+      <ul>
+        <li class="list act">
+          <a href="#home">
+            <span class="icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <span class="text">Home</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#who">
+            <span class="icon">
+              <ion-icon name="id-card-outline"></ion-icon>
+            </span>
+            <span class="text">who?</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#what">
+            <span class="icon">
+              <ion-icon name="construct-outline"></ion-icon>
+            </span>
+            <span class="text">what?</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#how">
+            <span class="icon">
+              <ion-icon name="code-working-outline"></ion-icon>
+            </span>
+            <span class="text">how?</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#why">
+            <span class="icon">
+              <ion-icon name="help-outline"></ion-icon>
+            </span>
+            <span class="text">why?</span>
+          </a>
+        </li>
+        <div class="ind">
+
+        </div>
+      </ul>
+    </div>
+    <script type="text/javascript">
+    const list = document.querySelectorAll('.list');
+    function act() {
+      list.forEach((item) => {
+        item.classList.remove('act');
+        this.classList.add('act');
+      });
+    }
+    list.forEach((item) => {
+      item.addEventListener('click',act);
+    });
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
